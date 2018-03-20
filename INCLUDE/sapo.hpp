@@ -1,3 +1,5 @@
+#ifndef sapo_hpp
+#define sapo_hpp
 #include <iostream>
 
 using namespace std;
@@ -16,7 +18,7 @@ class Sapo{
 		int capacidade[5];
 
 	public:
-
+		//Declara um sapo com seus atributos mutáveis.
 		Sapo(int id, int d, int qtd, int fp);
 
 		int getId();
@@ -39,3 +41,5 @@ class Sapo{
 		static int chegada;
 		static int getChegada();
 };
+
+#endif

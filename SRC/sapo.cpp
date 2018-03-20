@@ -45,12 +45,12 @@
 	void Sapo::createCommonJump(){
 		for (int i = 0; i < 5; i++)
 		{
-			capacidade[i] = i + 2;
+			capacidade[i] = i + 7;
 		}
 	}
 
 	int Sapo::pular(){
-		int key = rand() % 5 + 1;
+		int key = rand() % 4;
 		int jump = fuerza * (capacidade[key]);
 		return jump;
 	}
