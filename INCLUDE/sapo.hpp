@@ -14,7 +14,7 @@ class Sapo{
 		int identificador;
 		int dist_perc;
 		int qtd_pulos;
-		int fuerza;
+		float fuerza;
 		int capacidade[5];
 
 	public:
@@ -30,13 +30,16 @@ class Sapo{
 		int getQtd_pulos();
 		void setQtd_pulos(int qtd);
 
-		int getFuerza();
-		void setFuerza(int fp); // Fp é uma piadinha com Frog Power/ Horse Power.
+		float getFuerza();
+		void setFuerza(float fp); // Fp é uma piadinha com Frog Power/ Horse Power.
 
 		void createCommonJump();
 
 		void showYourCommon();
+		
 		int pular();
+
+		int Win();
 
 		static int chegada;
 		static int getChegada();
